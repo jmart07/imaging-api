@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'students#index'
   resources :students, only: [:index, :show]
   resources :templates do
     resources :shapes, only: [:create, :update, :destroy]
